@@ -326,6 +326,40 @@ a {
 
 
 
+.activites-title {
+    margin-top: 3em;
+}
+
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites-cards a {
+    width: 22%;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card {
+    padding: 0;
+}
+
+.activites-cards .card-title {
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+
+
+
+
+
 
 
 footer {
