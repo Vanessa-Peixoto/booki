@@ -53,7 +53,7 @@ li {
     list-style: none;
 }
 
-li:hover{
+.nav li:hover{
     color: #0065FC;
     border-top: 1px solid #0065FC;
 }
@@ -368,6 +368,9 @@ footer {
     justify-content: space-between;
 }
 
+.footer-title {
+    padding-left: 3em;
+}
 
 
 
