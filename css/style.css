@@ -91,7 +91,7 @@ a {
 
 .nav li:hover{
     color: var(--main-color);
-    border-top: 1px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 .resume-h3 {
@@ -110,7 +110,7 @@ a {
 }
 
 .location {
-    width: 2em;
+    width: 3em;
     display: flex;
     justify-content: center;
     border-radius: 10px 0 0 10px;
@@ -120,7 +120,7 @@ a {
 
 .location i {
     color: black;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .container-search input {
@@ -139,6 +139,10 @@ a {
     border-radius: 0 12px 12px 0;
     border-style: solid;
     border-color: var(--main-color);
+}
+
+.search-icon {
+    display: none;
 }
 
 .container-filtre {
@@ -420,7 +424,6 @@ footer {
 
     .filtre-option {
         flex-wrap: wrap;
-        padding: 1em;
     }
 
     .filtre {
@@ -446,6 +449,8 @@ footer {
 
     .nav li {
         padding-bottom: 20px;
+        width: 50%;
+        text-align: center;
     }
 
     .nav li:hover{
@@ -467,6 +472,37 @@ footer {
         margin-top: 7em;
     }
 
+    .container-search input {
+        width: 100%;
+        text-align: left;
+        padding-left: 1em;
+        border-right: none;
+    }
+
+    .location {
+        width: 4em;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .search-icon {
+        display: block;
+        background-color: var(--main-color);
+        border-radius: 15px;
+        width: 49px;
+        height: 49px;
+        text-align: center;
+        border: 1px solid var(--main-color);
+        filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.2));
+    }
+
+    .search-icon i {
+        color: white;
+        padding-top: 1em;
+    }
+
     .hebergements {
         order: 2;
         padding: 0;
@@ -478,7 +514,7 @@ footer {
     }
 
     .hebergements-cards .card {
-        width: 335px;
+        width: 100%;
         height: 197px;
     }
 
@@ -500,7 +536,7 @@ footer {
     }
 
     .populaires-cards .card {
-        width: 300px;
+        width: 100%;
     }
 
     .populaires-cards img {
@@ -508,16 +544,24 @@ footer {
         height: 100px;
     }
 
+    .activites{
+        padding: 1em;
+    }
+
     .activites-cards {
         display: block;
     }
 
     .activites-cards .card {
-        width: 335px;
+        width: 100%;
     }
 
     .activites-cards img {
         height: 141px;
+    }
+
+    .activites-title {
+        margin-top: 0;
     }
 
     footer {
