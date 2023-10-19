@@ -361,12 +361,26 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .container-filtre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-filtre {
+        margin-bottom: 1em;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards img {
+        height: 100px;
     }
 
     .populaires {
@@ -393,7 +407,7 @@ footer {
     }
 
     .activites-cards img {
-        height: 200px;
+        height: 170px;
     }
 }
 
