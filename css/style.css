@@ -85,8 +85,9 @@ a {
     padding: 0;
 }
 
-.nav li {
+.nav a {
     padding-top: 20px;
+    display: block;
 }
 
 .nav li:hover{
@@ -127,6 +128,7 @@ a {
     font-weight: bold;
     border: 1px solid var(--main-bg-color);
     text-align: center;
+    width: 179px;
 }
 
 .container-search input::placeholder {
@@ -145,18 +147,18 @@ a {
     display: none;
 }
 
-.container-filtre {
+.container-filter {
     display: flex;
     height: 3em;
 }
 
-.span-filtre {
+.span-filter {
     margin: 0 10px;
     display: flex;
     align-items: center;
 }
 
-.filtre {
+.filter {
     background-color: white;
     font-weight: bold;
     padding: 10px 15px;
@@ -165,15 +167,15 @@ a {
     margin-right: 10px;
 }
 
-.filtre i {
+.filter i {
     margin-right: 10px;
 }
 
-.filtre:hover{
+.filter:hover{
     background-color: var(--filter-bg-color);
 }
 
-.filtre-option {
+.filter-option {
     display: flex;
 }
 
@@ -364,14 +366,14 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
-    .container-filtre {
+    .container-filter {
         display: flex;
         flex-direction: column;
     }
 
-    .span-filtre {
+    .span-filter {
         margin-bottom: 1em;
     }
 
@@ -422,11 +424,11 @@ footer {
         margin: 1em;
     }
 
-    .filtre-option {
+    .filter-option {
         flex-wrap: wrap;
     }
 
-    .filtre {
+    .filter {
         width: 160px;
         margin-bottom: 1em;
     }
@@ -448,7 +450,6 @@ footer {
     }
 
     .nav li {
-        padding-bottom: 20px;
         width: 50%;
         text-align: center;
     }
@@ -457,6 +458,10 @@ footer {
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
         border-top-style: none;
+    }
+
+    .nav a {
+        padding-bottom: 20px;
     }
 
     .container-logo {
@@ -522,13 +527,13 @@ footer {
         height: 115px;
     }
 
-    .hebergements-and-populaires section {
-        background-color: white;
+    .hebergements-and-populaires .populaires {
+        border-radius: 0;
     }
 
-    .populaires {
-        padding: 0;
-        margin: 0;
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+        border-radius: 0;
     }
 
     .populaires-cards {
