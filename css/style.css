@@ -426,6 +426,7 @@ footer {
 
     .filter-option {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .filter {
@@ -573,5 +574,4 @@ footer {
         display: block;
         padding-top: 0.5em;
     }
-
 }
