@@ -93,6 +93,7 @@ a {
 .nav li:hover{
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
+    cursor: pointer;
 }
 
 .resume-h3 {
@@ -198,9 +199,9 @@ a {
     font-size: 0.8em;
 }
 
-/************* Main Sessions *************/
+/************* Main Sections *************/
 
-        /******Session Hebergements*******/
+        /******Section Hebergements*******/
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -318,7 +319,7 @@ a {
     margin-bottom: 5px;
 }
 
-        /********Session Activites*******/
+        /********Section Activites*******/
 
 .activites-title {
     margin-top: 3em;
@@ -355,6 +356,7 @@ footer {
     display: flex;
     background-color: var(--main-bg-color);
     justify-content: space-between;
+    margin-top: 3em;
 }
 
 .footer-title {
@@ -573,5 +575,6 @@ footer {
     footer {
         display: block;
         padding-top: 0.5em;
+        padding-bottom: 1em;
     }
 }
