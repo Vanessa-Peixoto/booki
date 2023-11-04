@@ -93,7 +93,6 @@ a {
 .nav li:hover{
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
-    cursor: pointer;
 }
 
 .resume-h3 {
@@ -166,6 +165,7 @@ a {
     border-radius: 25px;
     border: 2px solid var(--main-bg-color);
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .filter i {
